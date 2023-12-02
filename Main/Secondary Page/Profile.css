@@ -1,0 +1,71 @@
+html {
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  background-color: #407aff;
+  width: 260px;
+  height: 633px;
+  position: fixed;
+  z-index: 2;
+}
+.navbar-logo img {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.navbar-elements p > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #407aff;
+  font-weight: 400;
+}
+
+.navbar-elements p {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 212px;
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 18px;
+  padding-inline-start: 8px;
+}
+
+.elements a:hover {
+  background-color: #1540a7;
+  color: white;
+}
+
+.elements:hover {
+  background-color: #1540a7;
+  color: white;
+}
+
+.under-navbar {
+  width: 260px;
+  height: 1000px;
+  background-color: black;
+}
+
+.profile-tab {
+  display: flex;
+}
+
+.profile-avatar {
+  width: 300px;
+  height: 300px;
+}
+
+.profile-avatar img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}

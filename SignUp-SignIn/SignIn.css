@@ -1,0 +1,121 @@
+html {
+  font-family: "Oswald", sans-serif;
+}
+
+input:focus {
+  outline: none;
+  cursor: pointer;
+}
+.image-left {
+  width: 500px;
+}
+.image-left img {
+  width: 700px;
+  margin-top: 200px;
+  margin-left: 40px;
+}
+
+.image-form-tab {
+  display: flex;
+}
+
+.form-tab {
+  margin-left: 370px;
+  background-color: #407aff;
+  width: 387px;
+  height: 440px;
+  margin-top: 90px;
+  border-radius: 10px;
+}
+
+.form-title {
+  color: white;
+  margin-left: 30px;
+  font-size: 35px;
+}
+
+.form-tab input {
+  width: 343px;
+  height: 40px;
+  margin-left: 17px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  padding-inline-start: 4px;
+  font-family: "Oswald", sans-serif;
+}
+
+.form-submit {
+  background-color: #1540a7;
+  color: white;
+  font-size: 15px;
+  width: 348px;
+  height: 50px;
+  margin-left: 17px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.SignInWithGoogle {
+  width: 348px;
+  height: 50px;
+  margin-left: 17px;
+  margin-top: 10px;
+  border: none;
+  background-color: #1540a7;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.SignInWithGoogle p {
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+svg {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: px;
+  margin-right: 6px;
+}
+
+.form-submit:hover {
+  background-color: white;
+  color: black;
+}
+
+.SignInWithGoogle:hover {
+  background-color: white;
+  color: black;
+}
+
+.create-newacc {
+  width: 300px;
+  height: 40px;
+
+  border: none;
+  background-color: white;
+  color: #407aff;
+  font-size: 17px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.create-newacc a {
+  text-decoration: none;
+  color: #407aff;
+}
