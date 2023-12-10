@@ -1,0 +1,271 @@
+html {
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  background-color: #407aff;
+  width: 260px;
+  height: 633px;
+  position: fixed;
+  z-index: 2;
+}
+.navbar-logo img {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.elements {
+  transition: all 0.3s ease;
+}
+
+.navbar-elements p > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #407aff;
+  font-weight: 400;
+}
+
+.navbar-elements p {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 212px;
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 18px;
+  padding-inline-start: 8px;
+}
+
+.elements a:hover {
+  background-color: #1540a7;
+  color: white;
+}
+
+.elements:hover {
+  background-color: #1540a7;
+  color: white;
+}
+
+.post-tab {
+  margin-left: 260px;
+}
+
+.post-tab h1 {
+  padding-top: 60px;
+  margin-top: 0;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  color: #1540a7;
+}
+
+.post {
+  width: 600px;
+  margin-bottom: 50px;
+  max-height: 800px;
+  border-radius: 15px;
+  margin-left: 100px;
+  border: 2px black solid;
+}
+
+.avatar-name {
+  display: flex;
+  background-color: white;
+  width: 600px;
+  height: 70px;
+  border-radius: 12px 12px 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-left: 20px;
+}
+
+.avatar-name p {
+  font-size: 18px;
+}
+
+.avatar-name i {
+  margin-left: 330px;
+  margin-right: 25px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+
+.avatar-name i:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.post-title {
+  width: 570px;
+  max-height: 1000px;
+  background-color: white;
+  padding-inline-start: 20px;
+}
+
+.post-title p {
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 560px;
+  margin-bottom: 18px;
+}
+
+.img-post {
+  width: 600px;
+}
+
+.post-tools {
+  background-color: white;
+  display: flex;
+  width: 600px;
+  height: 70px;
+  border-radius: 0 0 15px 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.post-tools {
+  font-size: 25px;
+}
+
+/* .favorite i {
+  color: black;
+}
+
+.favorite i:active {
+  color: red;
+} */
+
+.favorite i {
+  color: black;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+}
+
+.comment i {
+  margin-right: 10px;
+  color: black;
+}
+
+.comment input {
+  width: 400px;
+  height: 25px;
+  margin-left: 0px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.comment-input {
+  border-radius: 10px;
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.share i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+
+.share i:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.text-in-post p {
+  margin-top: 0;
+}
+
+.text-in-post {
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+}
+
+.post-n-suggest {
+  display: flex;
+}
+
+.suggest-tab {
+  background-color: #407aff;
+  position: absolute;
+  z-index: 2;
+  margin-left: 740px;
+  margin-top: -150px;
+  width: 300px;
+  height: 600px;
+  border-radius: 15px;
+  padding-inline-start: 10px;
+}
+
+.suggest-tab h4 {
+  padding-top: 20px;
+}
+
+.suggest-acc {
+  background-color: white;
+  width: 270px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.suggest-acc img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px black solid;
+}
+
+.suggest-name {
+  margin-left: 10px;
+}
+
+.suggest-follow {
+  margin-left: 25px;
+  font-weight: 600;
+  border-radius: 7px;
+  height: 25px;
+  width: 70px;
+  text-align: center;
+  background-color: #1540a7;
+  color: white;
+  border: none;
+}
+
+.suggest-follow:hover {
+  background-color: black;
+}

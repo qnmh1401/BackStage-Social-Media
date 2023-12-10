@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+.navbar-messages {
+  background-color: #407aff;
+  width: 300px;
+  height: 633px;
+}
+
+.navbar-title img {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  background-color: white;
+  width: 270px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.navbar-search {
+  background-color: white;
+  width: 270px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+
+.navbar-search input {
+  border: none;
+  height: 35px;
+  width: 240px;
+  margin-top: 0;
+  margin-left: 5px;
+  border-radius: 0 15px 15px 0;
+  outline: none;
+}
+
+.navbar-search i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.navbar-users-messages {
+  width: 280px;
+  margin-left: 10px;
+  height: 494px;
+  max-height: 3000px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.user-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px black solid;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.user {
+  background-color: #407aff;
+  width: 250px;
+  margin-left: 10px;
+  height: 70px;
+  display: flex;
+}
+
+.user-info {
+}
+
+.user-name {
+  margin-left: 10px;
+  font-weight: 600px;
+}
+
+.user-messages {
+  margin-top: 0;
+}
