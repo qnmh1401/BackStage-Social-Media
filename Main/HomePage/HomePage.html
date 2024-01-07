@@ -27,16 +27,20 @@
           <a href=""><i class="fa-solid fa-user-group"></i> Friends</a>
         </p>
         <p class="elements">
-          <a href=""><i class="fa-solid fa-message"></i> Messages</a>
+          <a href="../Secondary Page/Message.html"
+            ><i class="fa-solid fa-message"></i> Messages</a
+          >
         </p>
         <p class="elements">
           <a href=""><i class="fa-solid fa-bell"></i> Notifications</a>
         </p>
+        <button id="create-btn" class="elements create-btn">
+          <i class="fa-regular fa-square-plus"></i> Create
+        </button>
         <p class="elements">
-          <a href=""><i class="fa-regular fa-square-plus"></i> Create</a>
-        </p>
-        <p class="elements">
-          <a href=""><i class="fa-solid fa-user"></i> Profile</a>
+          <a href="../Secondary Page/Profile.html"
+            ><i class="fa-solid fa-user"></i> Profile</a
+          >
         </p>
         <p class="elements">
           <a href=""><i class="fa-solid fa-gear"></i> Setting</a>
@@ -154,6 +158,21 @@
       </div>
     </div>
 
-    <script type="module" src="HomePage.js"></script>
+    <div class="form-post-option" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <div class="post-title">
+          <h1>Create</h1>
+          <i id="close-btn" class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <textarea
+          class="post-input-title"
+          placeholder="Write something..."
+        ></textarea>
+
+        <input class="post-upload" type="file" />
+      </form>
+    </div>
+
+    <script type="module" src="./HomePage.js"></script>
   </body>
 </html>

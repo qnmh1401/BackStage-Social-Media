@@ -1,11 +1,14 @@
 body {
   margin: 0;
+  font-family: "Oswald", sans-serif;
+  display: flex;
 }
 
 .navbar-messages {
   background-color: #407aff;
-  width: 300px;
-  height: 633px;
+  width: 310px;
+  height: 100%;
+  overflow: auto;
 }
 
 .navbar-title img {
@@ -49,11 +52,13 @@ body {
 .navbar-users-messages {
   width: 280px;
   margin-left: 10px;
-  height: 494px;
-  max-height: 3000px;
-  background-color: white;
+  height: 400px;
+  padding-block-end: 20px;
+  background-color: none;
   margin-top: 20px;
   border-radius: 10px;
+  padding-block-start: 20px;
+  margin-bottom: 54px;
 }
 
 .user-image {
@@ -61,26 +66,175 @@ body {
   height: 45px;
   border-radius: 50%;
   border: 1px black solid;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 5px;
 }
 
 .user {
-  background-color: #407aff;
-  width: 250px;
-  margin-left: 10px;
+  background-color: white;
+  width: 270px;
+  margin-left: 5px;
   height: 70px;
   display: flex;
-}
-
-.user-info {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
 }
 
 .user-name {
   margin-left: 10px;
   font-weight: 600px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  margin-top: 12px;
 }
 
 .user-messages {
-  margin-top: 0;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.user:hover {
+  background-color: #1540a7;
+}
+
+.messages-tab {
+  background-color: white;
+  width: 1066px;
+}
+
+.avatar-name-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.avatar-name-header p {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.avatar-name-header {
+  display: flex;
+  background-color: #407aff;
+  border-radius: 20px;
+  width: 200px;
+  height: 60px;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.messages-tab-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+
+.phone-call-header {
+  margin-right: 10px;
+  width: 140px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.phone-call-header i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.phone-call-header i:hover {
+  background-color: gray;
+}
+
+.messages-tab-display {
+  width: 100%;
+  height: 500px;
+}
+
+.messages-tab-footer {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px black solid;
+}
+
+.messages-tools {
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.messages-tools i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.messages-tools i:hover {
+  background-color: gray;
+}
+
+.messages-input {
+  width: 890px;
+  font-size: 20px;
+  margin-right: 20px;
+  display: flex;
+  border-radius: 15px;
+  border: 1px black solid;
+  align-items: center;
+}
+
+.messages-input input {
+  width: 850px;
+  margin-right: 10px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  margin-left: 5px;
+  outline: none;
+}
+
+.messages-input i {
+  margin-right: 8px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(221, 221, 221);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
 }

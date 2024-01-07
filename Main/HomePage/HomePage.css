@@ -52,6 +52,32 @@ body {
   color: white;
 }
 
+.create-btn {
+  font-size: 18px;
+  text-decoration: none;
+  color: #407aff;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 219px;
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 18px;
+  padding-inline-start: 8px;
+  outline: none;
+  border: none;
+}
+
+.create-btn:hover {
+  background-color: #1540a7;
+  color: white;
+}
+
+.create-btn i {
+  margin-right: 5px;
+}
+
 .post-tab {
   margin-left: 260px;
 }
@@ -268,4 +294,57 @@ body {
 
 .suggest-follow:hover {
   background-color: black;
+}
+
+.form-post-option {
+  display: none;
+  position: fixed;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  bottom: 0;
+  background-color: white;
+  z-index: 9;
+  height: 600px;
+  box-shadow: 2px 2px 2px 2px rgb(201, 201, 201);
+  border-radius: 15px;
+}
+
+.post-title {
+  display: flex;
+  border-radius: 15px 15px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+
+.post-title i {
+  font-size: 24px;
+  margin-right: 23px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.post-title i:hover {
+  background-color: gray;
+}
+
+.post-title h1 {
+  margin-left: 10px;
+}
+
+.post-input-title {
+  outline: none;
+  border: black solid 1px;
+  max-height: 800px;
+  width: 550px;
+  margin-left: 16px;
+  padding-inline-start: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
 }
