@@ -159,20 +159,42 @@
     </div>
 
     <div class="form-post-option" id="myForm">
-      <form action="/action_page.php" class="form-container">
+      <form class="form-container">
         <div class="post-title">
           <h1>Create</h1>
           <i id="close-btn" class="fa-solid fa-circle-xmark"></i>
         </div>
         <textarea
+          id="content"
           class="post-input-title"
           placeholder="Write something..."
         ></textarea>
+        <input
+          class="post-upload"
+          type="file"
+          id="file"
+          accept="image/gif, image/jpeg, image/png"
+          onchange="readURL(this)"
+        />
+        <img src="" alt="No Image" id="img" style="height: 150px;" />
 
-        <input class="post-upload" type="file" />
+        <button id="post-submit">Post</button>
       </form>
     </div>
 
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            document.querySelector("#img").setAttribute("src", e.target.result);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
     <script type="module" src="./HomePage.js"></script>
+    <script type="module" src="./CreatePost.js"></script>
   </body>
 </html>
