@@ -70,9 +70,8 @@ const createPost = async () => {
         console.log("Uploaded a blob or file!");
       });
       res = await getDownloadURL(storageRef);
-
     }
-    
+
     setDoc(doc(db, "Posts", Math.random().toString(20)), {
       userId: uid,
       content: content,
@@ -90,4 +89,59 @@ const postBtn = document.getElementById("post-submit");
 postBtn.addEventListener("click", (e) => {
   e.preventDefault();
   createPost();
+  addPost()
+});
+
+const addPost = (docs) => {
+  const postContainer = document.getElementById("post-container");
+  // const post = document.createElement("div");
+  // post.setAttribute("class", "post");
+
+  
+
+  // postContainer.appendChild(post);
+postContainer.innerHTML += `
+<div class="post">
+      <div class="avatar-name">
+        <img src="../Image/img7.png" />
+        <p>Nguyen Van A</p>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="post-title">
+        <p>
+          ${docs.data().content}
+        </p>
+      </div>
+      <div class="img-in-post">
+        <img class="img-post" src="${docs.data().image}" />
+      </div>
+      <div class="post-tools">
+        <div class="favorite">
+          <i id="favorite-btn" class="fa-solid fa-heart"></i>
+        </div>
+        <div class="comment">
+          <i class="fa-solid fa-comment"></i>
+          <div class="comment-input">
+            <input type="text" />
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+        <div class="share">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+    </div>
+  `;
+
+  cross.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const id = e.target.parentElement.getAttribute("cafe-id");
+    deleteDoc(doc(db, "cafes", id));
+  });
+};
+
+const querySnapshot = await getDocs(collection(db, "cafes"));
+querySnapshot.forEach((doc) => {
+  renderCafe(doc);
 });

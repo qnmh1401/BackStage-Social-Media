@@ -8,6 +8,28 @@ body {
   padding: 0px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(221, 221, 221);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
 .navbar {
   background-color: #407aff;
   width: 260px;
@@ -301,12 +323,14 @@ body {
   position: fixed;
   margin-left: 400px;
   margin-bottom: 20px;
-  bottom: 0;
+  bottom: 10px;
   background-color: white;
   z-index: 9;
-  height: 600px;
+  top: 20px;
   box-shadow: 2px 2px 2px 2px rgb(201, 201, 201);
   border-radius: 15px;
+  height: 600px;
+  overflow: auto;
 }
 
 .post-title {
@@ -339,12 +363,90 @@ body {
 
 .post-input-title {
   outline: none;
-  border: black solid 1px;
-  max-height: 800px;
+  border: none;
   width: 550px;
   margin-left: 16px;
   padding-inline-start: 10px;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 5px;
   border-radius: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+.post-edit {
+  display: block;
+}
+
+.avatar-name-edit {
+  display: flex;
+  background-color: white;
+  width: 600px;
+  height: 70px;
+  border-radius: 12px 12px 0 0;
+  align-items: center;
+}
+
+.avatar-name-edit img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-left: 20px;
+}
+
+.avatar-name-edit p {
+  font-size: 18px;
+}
+
+.post-upload {
+  display: none;
+}
+
+#file-input-label {
+  font-size: 1.2em;
+  padding: 10px 15px;
+}
+
+.button-upload {
+  border: 1px solid black;
+  border-radius: 4%;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#post-submit {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 4%;
+  width: 150px;
+  background-color: white;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.post-img {
+  margin-left: 0;
+}
+
+.upload-img-post {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px black;
+}
+
+.button-upload:hover {
+  background-color: gray;
+}
+
+#post-submit:hover {
+  background-color: gray;
 }

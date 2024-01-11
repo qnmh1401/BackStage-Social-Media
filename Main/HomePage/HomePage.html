@@ -55,7 +55,7 @@
       <h1>Enjoy your day with BackStage!</h1>
       <div class="post-n-suggest">
         <!-- post -->
-        <div>
+        <div id="post-container">
           <div class="post">
             <div class="avatar-name">
               <img src="../Image/img7.png" />
@@ -74,39 +74,9 @@
               </p>
             </div>
             <div class="img-in-post">
-              <img class="img-post" src="" />
-            </div>
-            <div class="post-tools">
-              <div class="favorite">
-                <i id="favorite-btn" class="fa-solid fa-heart"></i>
-              </div>
-              <div class="comment">
-                <i class="fa-solid fa-comment"></i>
-                <div class="comment-input">
-                  <input type="text" />
-                  <i class="fa-solid fa-paper-plane"></i>
-                </div>
-              </div>
-              <div class="share">
-                <i class="fa-solid fa-share"></i>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="avatar-name">
-              <img src="../Image/img7.png" />
-              <p>Nguyen Van A</p>
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-            <div class="post-title">
-              <p>
-                Nice car 😎
-              </p>
-            </div>
-            <div class="img-in-post">
               <img
                 class="img-post"
-                src="https://hips.hearstapps.com/hmg-prod/images/2024-nissan-gt-r-119-1673621285.jpg?crop=0.635xw:0.564xh;0,0.171xh&resize=1200:*"
+                src="https://firebasestorage.googleapis.com/v0/b/backstage-ae24f.appspot.com/o/images%2Fd0d0e0b58ae521bb78f4.jpg?alt=media&token=4a4315ff-8135-451d-90b8-89584bfc368d"
               />
             </div>
             <div class="post-tools">
@@ -164,21 +134,44 @@
           <h1>Create</h1>
           <i id="close-btn" class="fa-solid fa-circle-xmark"></i>
         </div>
-        <textarea
-          id="content"
-          class="post-input-title"
-          placeholder="Write something..."
-        ></textarea>
-        <input
-          class="post-upload"
-          type="file"
-          id="file"
-          accept="image/gif, image/jpeg, image/png"
-          onchange="readURL(this)"
-        />
-        <img src="" alt="No Image" id="img" style="height: 150px;" />
-
-        <button id="post-submit">Post</button>
+        <div class="post-edit">
+          <div>
+            <div class="avatar-name-edit">
+              <img src="../Image/img7.png" />
+              <p>Nguyen Van A</p>
+            </div>
+            <textarea
+              id="content"
+              class="post-input-title"
+              placeholder="Write something..."
+            ></textarea>
+          </div>
+          <img class="post-img" src="" id="img" style="width: 600px;" />
+          <div>
+            <input
+              class="post-upload"
+              type="file"
+              id="file"
+              accept="image/gif, image/jpeg, image/png"
+              onchange="readURL(this)"
+              data-multiple-caption="{count} files selected"
+              multiple
+              name="post-upload"
+            />
+          </div>
+          <div class="upload-img-post">
+            <div class="button-upload">
+              <label id="file-input-label" for="file"
+                ><i class="fa-regular fa-images"></i> Add image</label
+              >
+            </div>
+            <div class="post-submit">
+              <button onclick="postAndClose()" id="post-submit">
+                <i class="fa-solid fa-upload"></i> Post
+              </button>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
 

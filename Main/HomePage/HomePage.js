@@ -42,3 +42,7 @@ document.getElementById('create-btn').addEventListener('click', openForm)
 document.getElementById('close-btn').addEventListener('click', closeForm)
 
   
+function postAndClose(){
+  document.getElementById("myForm").style.display = "none";
+}
+document.getElementById('post-submit').addEventListener('click', postAndClose)
