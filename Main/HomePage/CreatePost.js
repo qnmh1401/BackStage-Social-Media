@@ -94,14 +94,11 @@ postBtn.addEventListener("click", (e) => {
 
 const addPost = (docs) => {
   const postContainer = document.getElementById("post-container");
-  // const post = document.createElement("div");
-  // post.setAttribute("class", "post");
-
-  
-
-  // postContainer.appendChild(post);
-postContainer.innerHTML += `
-<div class="post">
+  const post = document.createElement("div");
+  post.setAttribute("class", "post");
+  postContainer.appendChild(post);
+post.innerHTML = `
+    <div>
       <div class="avatar-name">
         <img src="../Image/img7.png" />
         <p>Nguyen Van A</p>
@@ -133,15 +130,20 @@ postContainer.innerHTML += `
     </div>
   `;
 
-  cross.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const id = e.target.parentElement.getAttribute("cafe-id");
-    deleteDoc(doc(db, "cafes", id));
-  });
+  
 };
 
-const querySnapshot = await getDocs(collection(db, "cafes"));
-querySnapshot.forEach((doc) => {
-  renderCafe(doc);
+
+
+const updateAgainList = (doc) => {
+  
+  addPost(doc);
+}
+
+const unsubscribe = onSnapshot(collection(db, "Users"), (querySnapshot) => {
+  
+  querySnapshot.forEach((doc) => {
+    updateAgainList(doc)
+    console.log(doc.data());
+  })
 });
